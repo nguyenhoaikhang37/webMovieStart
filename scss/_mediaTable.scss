@@ -1,0 +1,121 @@
+/* Table: width < 1024px */
+@media Screen and (max-width: 63.9375em) {
+  body {
+    overflow-x: hidden;
+  }
+  html {
+    font-size: 50%;
+  }
+  .header {
+    width: 100%;
+  }
+  .contact__info {
+    opacity: 0;
+    height: 0;
+  }
+  .head-nav .head-item {
+    display: block;
+    border-bottom: none;
+  }
+  .slide__title-2 {
+    font-size: 5rem;
+  }
+  .head-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 100px;
+    text-align: center;
+    z-index: 100;
+    background: #000;
+    transition: all 0.5 linear;
+    display: none;
+  }
+
+  .head-nav.active {
+    // opacity: 1;
+    display: block;
+  }
+  .head-icon {
+    cursor: pointer;
+    display: block;
+  }
+  .head-nav .head-item .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  }
+
+  .header__menu-scroll {
+    padding: 1.5rem 3rem;
+    .head-nav {
+      display: none;
+
+      .head-item .active {
+        color: white;
+      }
+    }
+
+    .active2 {
+      display: block;
+    }
+    .head-icon {
+      display: block;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .slick-prev::before,
+  .slick-next::before {
+    display: none;
+  }
+  #schedule {
+    .day {
+      &__item {
+        display: block !important;
+
+        &.active::after {
+          width: 4px;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+    .content-item {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+
+    .sche__img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      background-position: center center;
+      margin-bottom: 3rem;
+    }
+
+    .info-title2 {
+      font-size: 3rem;
+    }
+    .info-desc {
+      font-size: 2rem;
+    }
+    .info-synopsis {
+      font-size: 1.6rem;
+    }
+
+    .info__time {
+      flex-direction: column;
+    }
+    .clock {
+      margin-bottom: 20px;
+    }
+  }
+}

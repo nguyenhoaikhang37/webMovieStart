@@ -1,0 +1,111 @@
+#schedule {
+  margin-top: 150px;
+  padding-bottom: 150px;
+}
+.schedule__day .day {
+  border-bottom: 1px solid #d8d8d8;
+}
+.day {
+  &__item {
+    display: inline-block;
+    padding: 2rem 3rem;
+    font-size: 1.8rem;
+    position: relative;
+    cursor: pointer;
+
+    &:not(:first-child) {
+      margin-left: -5px;
+    }
+    &.active::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #fbbd61, #ec7532);
+    }
+    &.active {
+      color: #ec7532;
+    }
+  }
+}
+
+.content-item {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  column-gap: 30px;
+  padding: 50px 10px;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content-content {
+  display: none;
+}
+.content-content.active-show {
+  display: block;
+}
+.sche__img {
+  border-radius: 10px;
+}
+
+.info-title1 {
+  color: #ee8144;
+  letter-spacing: 2px;
+}
+.info-title2 {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+.info-desc {
+  color: #929292;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.info-synopsis {
+  color: #ee8144;
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+}
+
+.info__time {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.time-icon {
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  font-size: 1.3rem;
+  color: #7c7c7c;
+}
+.clock {
+  display: flex;
+}
+.far.fa-clock {
+  margin-right: 5px;
+}
+.time__clock.disable {
+  color: #999;
+}
+.time__clock {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #d8d8d8;
+  color: #333;
+  margin: 0 5px;
+}
+
+.time__min-min {
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  color: #929292;
+}
+.time__min-rounder {
+  padding: 5px;
+  background: #4a4a4a;
+  color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+}

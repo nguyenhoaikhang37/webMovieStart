@@ -1,0 +1,117 @@
+/* comingsoon */
+#comingsoon {
+  background-color: black;
+  padding-top: 5rem;
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+#comingsoon .bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slick-slide {
+  padding: 5px;
+}
+
+.comingsoon_list {
+  display: flex;
+}
+.film__name {
+  color: #636363;
+  font-size: 1.5rem;
+}
+.film__day {
+  color: #353535;
+  font-size: 1.5rem;
+}
+.film__boxx {
+  text-align: center;
+}
+.film__boxx:hover .film__name {
+  color: white;
+}
+.film__boxx:hover .film__day {
+  color: #757575;
+}
+.img-fluid {
+  height: 28rem;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.6;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.comingsoon__boxx {
+  background: #101010;
+  padding: 4rem 0;
+}
+.co__title {
+  color: #b77957;
+}
+.co__name {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.co__calendar {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+
+  .fa-calendar-alt {
+    font-size: 1.2rem;
+  }
+  span {
+    color: #b4b7b6;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+  }
+}
+.fas.fa-star {
+  color: #f7be67;
+  margin: 0 0.3rem;
+  font-size: 1rem;
+}
+
+.co__desc {
+  margin-top: 2rem;
+}
+.co__more {
+  color: #ec7532;
+  letter-spacing: 3px;
+  cursor: pointer;
+
+  &:hover {
+    color: yellow;
+  }
+}
+
+#help {
+  padding: 5rem 0;
+}
+.help__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.help__title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.help__phone {
+  font-size: 3.5rem;
+  color: #ec7532;
+}
